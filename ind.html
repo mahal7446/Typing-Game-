@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typing Speed Tester</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="black">
+  <div class="container">
+    <h1>Type Like a pro - let's go ⌨️</h1>
+
+    <label>🕐 Select Time:
+      <select id="timeSelect">
+        <option value="10">10 seconds</option>
+        <option value="30" selected>30 seconds</option>
+        <option value="60">1 minute</option>
+        <option value="300">5 minutes</option>
+      </select>
+    </label>
+
+    <label> &#x1F30C; Theme:
+      <select id="themeSelect">
+        <option value="black" selected> Black</option>
+        <option value="white"> White</option>
+        <option value="blue"> Blue</option>
+      </select>
+    </label>
+
+    <div id="quote"></div>
+    <textarea id="input" placeholder="Start typing here..." disabled></textarea>
+
+    <button id="startBtn">Start Test</button>
+
+    <div class="stats">
+      <span> ⏱ Time: <span id="time">30</span>s</span>
+      <span>⚡ WPM: <span id="wpm">0</span></span>
+      <span>🍀 Accuracy: <span id="accuracy">0</span>%</span>
+    </div>
+    <p>🏅 Top WPM: <span id="topWpm">0</span></p>
+  </div>
+
+  <div id="countdownOverlay" class="overlay hidden">
+    <div id="countdownText">3</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
